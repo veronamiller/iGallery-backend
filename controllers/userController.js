@@ -112,4 +112,13 @@ const authUser = asyncHandler(async (req, res) => {
       throw new Error('User not found')
     }
   })
-  export {authUser, getUserProfile, registerUser, updateUserProfile}
+
+  // get all users 
+  // for admin
+  const getUsers = asyncHandler(async (req, res) => {
+    const users =  await User.find({})
+    res.json(users)
+
+  
+  })
+  export {authUser, getUserProfile, registerUser, updateUserProfile, getUsers}
