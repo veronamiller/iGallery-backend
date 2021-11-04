@@ -20,6 +20,14 @@ const users = [
       password: bcrypt.hashSync('123456', 10),
     },
     {
+      name: 'Example User',
+      username: 'exampleuser',
+      country: 'germany',
+      city: 'berlin',
+      email: 'user@example.com',
+      password: bcrypt.hashSync('123456', 10),
+    },
+    {
       name: 'Jane Doe',
       username: 'janedoe',
       country: 'germany',
